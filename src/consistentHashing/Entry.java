@@ -11,4 +11,9 @@ public class Entry {
     public String toString() {
         return key;
     }
+
+    @Override
+    public int hashCode() {
+        return key.hashCode();
+    }
 }

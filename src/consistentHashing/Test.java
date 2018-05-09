@@ -23,18 +23,18 @@ public class Test {
             cluster.put(entry);
         }
 
-        cluster.addServer(new Server("192.168.0.5"));
+        cluster.addServer(new Server("france"));
 
         findEntries(cluster, entries);
     }
 
     private static Cluster createCluster() {
         Cluster cluster = new Cluster();
-        cluster.addServer(new Server("192.168.0.0"));
-        cluster.addServer(new Server("192.168.0.1"));
-        cluster.addServer(new Server("192.168.0.2"));
-        cluster.addServer(new Server("192.168.0.3"));
-        cluster.addServer(new Server("192.168.0.4"));
+        cluster.addServer(new Server("china"));
+        cluster.addServer(new Server("japan"));
+        cluster.addServer(new Server("korea"));
+        cluster.addServer(new Server("usa"));
+        cluster.addServer(new Server("italy"));
         return cluster;
     }
 

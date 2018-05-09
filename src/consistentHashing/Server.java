@@ -20,4 +20,9 @@ public class Server {
     public Entry get(Entry entry) {
         return entries.get(entry);
     }
+
+    @Override
+    public int hashCode() {
+        return name.hashCode();
+    }
 }
